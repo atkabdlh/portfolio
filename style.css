@@ -1,0 +1,15 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    background-size: 100%;
+}
+#portfolio{
+    width: 80%;
+    margin: 0 auto;
+}
+#name{
+
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 30px;
+}
