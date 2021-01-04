@@ -8,6 +8,7 @@ import Details from "../../assets/details.json";
 })
 export class SkillComponent implements OnInit {
   skills: object[] = Details.skillsList;
+  title: string = 'Skills';
 
   constructor() { }
 

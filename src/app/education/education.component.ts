@@ -8,6 +8,7 @@ import Details from "../../assets/details.json";
 })
 export class EducationComponent implements OnInit {
   educations: object[] = Details.education;
+  title: string = 'Education';
 
   constructor() { }
 

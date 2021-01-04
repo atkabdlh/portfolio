@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   phoneNo: string = Details.phoneNo;
   email: string = Details.email;
   websites: string[] = Details.websites;
+  statements: string[] = Details.personalStatement;
 
   constructor() { }
 

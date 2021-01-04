@@ -8,6 +8,7 @@ import Details from "../../assets/details.json";
 })
 export class WorkHistoryComponent implements OnInit {
   workHistory: object[] = Details.workHistory;
+  title: string = 'Work History';
 
   constructor() { }
 

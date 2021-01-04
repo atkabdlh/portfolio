@@ -1,11 +1,8 @@
-td{
-  width: 50%;
-}
-
-.skill-container{
+div{
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  display: grid;
-  grid-template-columns: repeat(3, 409px);
+  font-weight: 600;
+  font-size: 24px;
   width: 80%;
   margin: 0 auto;
+  line-height: 10px;
 }

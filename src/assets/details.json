@@ -99,6 +99,13 @@
       "end": "October 2019",
       "school": "University Teknologi MARA - Shah Alam, Selangor"
     }
-  ]
-
+  ],
+  "githubPages": [
+    "portfolio",
+    "mealgen",
+    "calc"
+  ],
+  "dev": {
+    "build": "ng build --prod --output-path docs --base-href /portfolio/"
+  }
 }

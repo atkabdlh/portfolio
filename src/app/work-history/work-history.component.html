@@ -1,12 +1,13 @@
-<h3>Work History</h3>
+<app-title [title]="title"></app-title>
 
-<div *ngFor="let work of workHistory">
-  <div>{{ work.position }}</div>
-  <div>{{ work.start }} - {{ work.end }}</div>
+<div class="work-container" *ngFor="let work of workHistory">
+  <div class="sub-title">{{ work.position }}</div>
+  <div class="date">{{ work.start }} - {{ work.end }}</div>
   <div>{{ work.company }}</div>
   <div>
     <ul>
       <li *ngFor="let desc of work.desc">{{ desc }}</li>
     </ul>
   </div>
+  <br>
 </div>
