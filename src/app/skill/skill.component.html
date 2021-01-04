@@ -1,0 +1,62 @@
+<h3>Skills</h3>
+
+<div class="container">
+  <div *ngFor="let skill of skills">
+    <table>
+      <tbody>
+        <tr>
+          <td>{{ skill.name }}</td>
+          <td>
+            <svg xmlns="http://www.w3.org/2000/svg" width="118" height="22"  stroke="#4f4f4f" stroke-width="3" *ngIf="skill.value == 1">
+              <rect x="1.5" y="1.5" width="16" height="18" fill="#4f4f4f" rx="2"/>
+              <g fill="none">
+                <rect x="23.5" y="1.5" width="16" height="18" rx="2"/>
+                <rect x="45.5" y="1.5" width="16" height="18" rx="2"/>
+                <rect x="67.5" y="1.5" width="16" height="18" rx="2"/>
+                <rect x="89.5" y="1.5" width="16" height="18" rx="2"/>
+              </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="118" height="22" *ngIf="skill.value == 2">
+              <g fill="#4f4f4f" stroke="#4f4f4f" stroke-width="3">
+                <rect x="1.5" y="1.5" width="16" height="18" rx="2"/>
+                <rect x="23.5" y="1.5" width="16" height="18" rx="2"/>
+              </g>
+              <g fill="none">
+                <rect x="45.5" y="1.5" width="16" height="18" stroke="#4f4f4f" stroke-width="3" rx="2"/>
+                <rect x="67.5" y="1.5" width="16" height="18" stroke="#4f4f4f" stroke-width="3" rx="2"/>
+                <rect x="89.5" y="1.5" width="16" height="18" stroke="#4f4f4f" stroke-width="3" rx="2"/>
+              </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="118" height="22" *ngIf="skill.value == 3">
+              <g fill="#4f4f4f" stroke="#4f4f4f" stroke-width="3">
+                <rect x="1.5" y="1.5" width="16" height="18" rx="2"/>
+                <rect x="23.5" y="1.5" width="16" height="18" rx="2"/>
+                <rect x="45.5" y="1.5" width="16" height="18" rx="2"/>
+              </g>
+              <g fill="none">
+                <rect x="67.5" y="1.5" width="16" height="18" stroke="#4f4f4f" stroke-width="3" rx="2"/>
+                <rect x="89.5" y="1.5" width="16" height="18" stroke="#4f4f4f" stroke-width="3" rx="2"/>
+              </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="118" height="22" *ngIf="skill.value == 4">
+              <g fill="#4f4f4f" stroke="#4f4f4f" stroke-width="3">
+                <rect x="1.5" y="1.5" width="16" height="18" rx="2"/>
+                <rect x="23.5" y="1.5" width="16" height="18" rx="2"/>
+                <rect x="45.5" y="1.5" width="16" height="18" rx="2"/>
+                <rect x="67.5" y="1.5" width="16" height="18" rx="2"/>
+              </g>
+              <rect x="89.5" y="1.5" width="16" height="18" stroke="#4f4f4f" stroke-width="3" rx="2" fill="none"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="118" height="22"  fill="#4f4f4f" stroke="#4f4f4f" stroke-width="3" *ngIf="skill.value == 5">
+              <rect x="1.5" y="1.5" width="16" height="18" rx="2"/>
+              <rect x="23.5" y="1.5" width="16" height="18" rx="2"/>
+              <rect x="45.5" y="1.5" width="16" height="18" rx="2"/>
+              <rect x="67.5" y="1.5" width="16" height="18" rx="2"/>
+              <rect x="89.5" y="1.5" width="16" height="18" rx="2"/>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

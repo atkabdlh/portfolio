@@ -1,0 +1,32 @@
+<h1>{{ fullname }}</h1>
+
+<div *ngIf="websites.length <= 2">
+  <table>
+    <tbody>
+      <tr>
+        <td>{{ phoneNo }}</td>
+        <td>{{ email }}</td>
+        <td *ngFor="let website of websites"><a href="https://www.{{ website }}">{{ website }}</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div *ngIf="websites.length > 2">
+  <table>
+    <tbody>
+      <tr>
+        <td>{{ phoneNo }}</td>
+        <td>{{ email }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <td *ngFor="let website of websites"><a href="https://www.{{ website }}">{{ website }}</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

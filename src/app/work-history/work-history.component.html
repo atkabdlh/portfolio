@@ -1,0 +1,12 @@
+<h3>Work History</h3>
+
+<div *ngFor="let work of workHistory">
+  <div>{{ work.position }}</div>
+  <div>{{ work.start }} - {{ work.end }}</div>
+  <div>{{ work.company }}</div>
+  <div>
+    <ul>
+      <li *ngFor="let desc of work.desc">{{ desc }}</li>
+    </ul>
+  </div>
+</div>
