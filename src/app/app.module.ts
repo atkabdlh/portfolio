@@ -8,6 +8,7 @@ import { SkillComponent } from './skill/skill.component';
 import { WorkHistoryComponent } from './work-history/work-history.component';
 import { EducationComponent } from './education/education.component';
 import { TitleComponent } from './title/title.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TitleComponent } from './title/title.component';
     SkillComponent,
     WorkHistoryComponent,
     EducationComponent,
-    TitleComponent
+    TitleComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

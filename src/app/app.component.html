@@ -1,8 +1,8 @@
-<app-header></app-header>
-<br><br>
-<app-skill></app-skill>
-<br><br>
-<app-work-history></app-work-history>
-<br>
-<app-education></app-education>
+<app-resume #resumeComp></app-resume>
+
+<div>
+  <p>Download my resume and cover letter here!</p>
+  <button (click)="printPdf()">Resume</button>
+  <button (click)="printCoverLetter()">Cover Letter</button>
+</div>
 <br><br>
