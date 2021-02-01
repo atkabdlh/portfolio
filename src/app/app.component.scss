@@ -1,0 +1,111 @@
+$colors: #4C3232, #D69A53, #B85E4F, #426570, #E1D5C8, #92B287;
+
+nav{
+  display: block;
+  width: 110%;
+  height: 70px;
+  margin: -10px;
+  padding: 0;
+  background-color: #4C3232;
+}
+
+ul{
+  list-style-type: none;
+  float: right;
+  margin-top: 30px;
+  margin-right: 130px;
+}
+
+li{
+  display: inline;
+  margin: 20px;
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: #D69A53;
+  font-weight: bold;
+}
+
+a:visited{
+  color: #D69A53;
+}
+
+a:active{
+  font-size: smaller;
+}
+
+input{
+  width: 250px;
+  height: 30px;
+  margin: 0 10px;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px double #4C3232;
+}
+
+button{
+  width: 100px;
+  height: 37px;
+  margin: 0 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #4C3232;
+  color: #D69A53;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button:active, button:focus{
+  border-style: none;
+}
+
+#hero{
+  height: 350px;
+  padding-top: 200px;
+  padding-right: 20%;
+  margin: 10px -10px;
+  //background-image: url("../assets/hero.svg");
+  text-align: right;
+}
+
+#hero p{
+  font-size: 26px;
+}
+
+#about{
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  padding-top: 200px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#projects{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  width: 80%;
+  height: 550px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#projects div{
+  padding: 10px;
+  text-align: center;
+}
+
+#projects a{
+  color: #4C3232;
+}
+
+#projects a:visited{
+  color: #4C3232;
+}

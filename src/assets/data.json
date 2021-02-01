@@ -1,0 +1,38 @@
+{
+  "aboutMe": [
+    "Hello there,",
+    "my name is Atikah. I am an enthusiastic web developer and an aspiring designer.",
+    "My passion widely range from web design and graphic design to arts and crafts to furniture and interior designs.",
+    "Yeah, that's pretty overambitious. However, part of the fun lies in the learning process and I'm all up for it!"
+  ],
+  "projects": [
+    {
+      "title": "Calculator",
+      "desc": "A simple calculator project.",
+      "image": "../assets/calculator.png",
+      "site": "https://atkabdlh.github.io/calc/",
+      "github": "https://github.com/atkabdlh/calc"
+    },
+    {
+      "title": "Eat in Dice",
+      "desc": "A random recipe generator created by using themealdb api. This was made for my sister to encourage her to cook instead of buying takeouts.",
+      "image": "../assets/eat-in-dice.png",
+      "site": "https://atkabdlh.github.io/mealgen/",
+      "github": "https://github.com/atkabdlh/mealgen"
+    },
+    {
+      "title": "test-fire",
+      "desc": "A test firebase app.",
+      "image": "../assets/test-fire.png",
+      "site": "https://test-fire-bb051.web.app/",
+      "github": "https://github.com/atkabdlh/test-fire"
+    },
+    {
+      "title": "Today's Menu",
+      "desc": "An app where the user can add or delete dishes and choose dishes to display on today's menu.",
+      "image": "../assets/menu.png",
+      "site": "https://menu-7d96b.web.app/",
+      "github": "https://github.com/atkabdlh/menu"
+    }
+  ]
+}
