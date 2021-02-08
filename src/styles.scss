@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body{
+  height: 100%;
+}
 
 body{
-  //background-image: url("assets/background.svg");
-  background-color: #D69A53;
+  margin: 0;
   font-family: 'Lato', sans-serif;
-  color: #4C3232;
+  background-color: #D291BC;
+  color: whitesmoke;
+}
+
+a:visited{
+  color: #D291BC;
 }

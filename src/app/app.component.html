@@ -1,29 +1,48 @@
-<nav>
-  <ul>
-    <li><a href="#about">About me</a></li>
-    <li><a href="#projects">Projects</a></li>
-  </ul>
-</nav>
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="home button" (click)="scrollTo(hero)">
+    <mat-icon>home</mat-icon>
+  </button>
+  <span></span>
+  <span class="example-spacer"></span>
+  <a mat-icon-button class="example-icon" aria-label="about button" href="https://atkabdlh.github.io/resume/" target="_blank">
+    <mat-icon>face</mat-icon>
+  </a>
+  <button mat-icon-button class="example-icon" aria-label="projects button" (click)="scrollTo(work)">
+    <mat-icon>work</mat-icon>
+  </button>
+</mat-toolbar>
 
-<div id="hero">
-  <p>Keep in touch, drop your email below!</p>
-  <form [formGroup]="emailForm" (ngSubmit)="keepEmail(emailForm.value)">
-    <input formControlName="email" type="email">
-    <button type="submit">Submit</button>
-  </form>
+<div #hero id="hero">
+  <p>Keep in touch, <a mat-button href="mailto:atkabdlh@gmail.com">say hi!</a></p>
+<!--  <form [formGroup]="emailForm" (ngSubmit)="keepEmail(emailForm.value)">-->
+<!--    <input formControlName="email" type="email">-->
+<!--    <button type="submit">Submit</button>-->
+<!--  </form>-->
 </div><br>
 
-<div id="about" *ngIf="about.length != 0">
-  <div *ngFor="let sentence of about">{{ sentence }}</div>
-  <div>You may visit my resume <a href="https://atkabdlh.github.io/resume/" target="_blank">here</a>.</div>
-</div>
-
-<div id="projects">
-  <div *ngFor="let project of projects">
-    <img src="{{ project.image }}" width="100%">
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.desc }}</p>
-    <a href="{{ project.site }}" target="_blank">Demo</a> | <a href="{{ project.github }}" target="_blank">Github</a>
+<div #work id="work">
+  <div fxLayout="row wrap" fxLayoutGap="10px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let project of projects">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{ project.title }}</mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+<!--        <img mat-card-image src="{{ project.image }}" alt="project screenshot">-->
+        <mat-icon>{{ project.icon }}</mat-icon>
+        <mat-card-content>
+          <p></p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a mat-button href="{{ project.site }}" target="_blank">DEMO</a>
+          <a mat-button href="{{ project.github }}" target="_blank">GITHUB</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
   </div>
 </div>
-<br><br>
+<br>
+<div id="footer">
+  <p>landing page created for fun by atikah abdullah</p>
+</div>
+<br>

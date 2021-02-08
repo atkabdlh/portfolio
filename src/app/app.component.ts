@@ -11,24 +11,28 @@ import { EmailService } from './email.service';
 export class AppComponent {
   title = 'portfolio';
 
-  emailForm = new FormGroup({
-    email: new FormControl('')
-  });
+  // emailForm = new FormGroup({
+  //   email: new FormControl('')
+  // });
 
-  about: string[] = Data.aboutMe;
   projects: object[] = Data.projects;
 
-  constructor(private emailService: EmailService) {}
+  // constructor(private emailService: EmailService) {}
 
   // tslint:disable-next-line:typedef
-  reset() {
-    this.emailForm.reset();
-  }
+  // reset() {
+  //   this.emailForm.reset();
+  // }
+  //
+  // // tslint:disable-next-line:typedef
+  // keepEmail(data) {
+  //   console.log(data);
+  //   this.emailService.createItem(data);
+  //   this.reset();
+  // }
 
   // tslint:disable-next-line:typedef
-  keepEmail(data) {
-    console.log(data);
-    this.emailService.createItem(data);
-    this.reset();
+  scrollTo(el: HTMLElement){
+    el.scrollIntoView();
   }
 }
