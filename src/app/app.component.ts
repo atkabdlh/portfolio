@@ -30,9 +30,4 @@ export class AppComponent {
   //   this.emailService.createItem(data);
   //   this.reset();
   // }
-
-  // tslint:disable-next-line:typedef
-  scrollTo(el: HTMLElement){
-    el.scrollIntoView();
-  }
 }

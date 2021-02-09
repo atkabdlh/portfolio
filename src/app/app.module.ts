@@ -12,6 +12,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { MatCardModule } from '@angular/material/card';
         MatToolbarModule,
         MatButtonModule,
         MatIconModule,
-        MatCardModule
+        MatCardModule,
+        MDBBootstrapModule.forRoot()
     ],
   providers: [],
   bootstrap: [AppComponent]

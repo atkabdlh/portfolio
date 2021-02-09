@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="500">
   <defs>
     <linearGradient id="A" x1="50%" y1="0%" x2="50%" y2="100%">
-      <stop offset="0%" stop-color="#e0bbe4"/>
-      <stop offset="80%" stop-color="#d291bc"/>
+      <stop offset="0%" stop-color="#FFAABB"/>
+      <stop offset="80%" stop-color="#E97DA5"/>
     </linearGradient>
     <path id="B" d="M108 0h18v6h6v6h6v18h-6v6h-6v6h-18v-6h-6v-6h-6V12h6V6h6V0zm12 6h-6v6h-6v6h-6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z"/>
     <path id="C" d="M108 48h18v6h6v6h6v18h-6v6h-6v6h-18v-6h-6v-6h-6V60h6v-6h6v-6zm12 6h-6v6h-6v6h-6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6v-6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z"/>
@@ -11,7 +11,7 @@
     <path id="F" d="M108 96h18v6h6v6h6v18h-6v6h-6v6h-18v-6h-6v-6h-6v-18h6v-6h6v-6zm12 6h-6v6h-6v6h-6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6v-6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z"/>
   </defs>
   <path fill="url(#A)" d="M0 0h1366v500H0z"/>
-  <g fill="#d291bc">
+  <g fill="#E97DA5">
     <path d="M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6zM60 0h18v6h6v6h6v18h-6v6h-6v6H60v-6h-6v-6h-6V12h6V6h6V0zm12 6h-6v6h-6v6h-6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z"/>
     <use xlink:href="#B"/>
     <use xlink:href="#B" x="48"/>

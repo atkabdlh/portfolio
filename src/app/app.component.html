@@ -1,5 +1,6 @@
 <mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="home button" (click)="scrollTo(hero)">
+  <button mat-icon-button class="example-icon" aria-label="home button">
+<!--    (click)="scrollTo(hero)"-->
     <mat-icon>home</mat-icon>
   </button>
   <span></span>
@@ -7,42 +8,46 @@
   <a mat-icon-button class="example-icon" aria-label="about button" href="https://atkabdlh.github.io/resume/" target="_blank">
     <mat-icon>face</mat-icon>
   </a>
-  <button mat-icon-button class="example-icon" aria-label="projects button" (click)="scrollTo(work)">
-    <mat-icon>work</mat-icon>
-  </button>
+  <a mat-icon-button class="example-icon" aria-label="email button" href="mailto:atkabdlh@gmail.com">
+    <mat-icon>email</mat-icon>
+  </a>
 </mat-toolbar>
 
-<div #hero id="hero">
-  <p>Keep in touch, <a mat-button href="mailto:atkabdlh@gmail.com">say hi!</a></p>
-<!--  <form [formGroup]="emailForm" (ngSubmit)="keepEmail(emailForm.value)">-->
-<!--    <input formControlName="email" type="email">-->
-<!--    <button type="submit">Submit</button>-->
-<!--  </form>-->
-</div><br>
-
-<div #work id="work">
-  <div fxLayout="row wrap" fxLayoutGap="10px grid">
-    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let project of projects">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>{{ project.title }}</mat-card-title>
-          <mat-card-subtitle></mat-card-subtitle>
-        </mat-card-header>
-<!--        <img mat-card-image src="{{ project.image }}" alt="project screenshot">-->
-        <mat-icon>{{ project.icon }}</mat-icon>
-        <mat-card-content>
-          <p></p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a mat-button href="{{ project.site }}" target="_blank">DEMO</a>
-          <a mat-button href="{{ project.github }}" target="_blank">GITHUB</a>
-        </mat-card-actions>
-      </mat-card>
+<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100" src="../assets/coding.jpg" alt="First slide">
+      <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
     </div>
-  </div>
-</div>
-<br>
-<div id="footer">
-  <p>landing page created for fun by atikah abdullah</p>
-</div>
-<br>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">Website Development</h3>
+      <p>Coming Soon!</p>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100" src="../assets/drawing.jpg" alt="Third slide">
+      <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">Drawing and Graphic Design</h3>
+      <p>Coming Soon!</p>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100" src="../assets/designing.jpg" alt="Third slide">
+      <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">Interior Design</h3>
+      <p>Coming Soon!</p>
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>
+
+
+
+
+
+
